@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: size(70);
+}
+
+#formacao:target {
+  scroll-margin-top: size(120);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $color-type;
+  font-family: $type-first;
+  letter-spacing: .3px;
+  position: relative;
+
+  &.darkmode {
+    background: $color-seven;
+    color: $color-four;
+  }
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-type;
+
+  @include dark() {
+    color: $color-four;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: block;
+  font-size: size(16);
+  font-family: $type-first;
+  color: $color-type;
+
+  @include dark() {
+    color: $color-four;
+  }
+}
