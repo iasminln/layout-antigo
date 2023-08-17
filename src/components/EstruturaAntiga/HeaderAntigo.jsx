@@ -9,9 +9,17 @@ const HeaderAntigo = () => {
   return (
     <header className='container-antigo header-antigo'>
       <div className='content-antigo'>
-        <div>
-          <Link to='/mais-coisas'>Mais</Link>
-        </div>
+        <nav className='navegacao'>
+          <ul>
+            <li className='nav-item'>
+              <Link to='/'>Home</Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/mais-coisas'>Mais</Link>
+            </li>
+          </ul>
+
+        </nav>
         <img src={LyaoutAntigo} alt="" />
       </div>
     </header>
