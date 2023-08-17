@@ -5,6 +5,11 @@
   z-index: 3;
   width: 70px;
 
+  @include mq(780){
+    left: 13vw;
+    top: 73vw;
+  }
+
   .text-player {
     font-size: size(16);
     color: $color-type;
@@ -50,6 +55,7 @@
     align-items: center;
     position: relative;
     padding: size(40) size(30);
+    margin: size(10);
 
     .links-music {
       display: flex;

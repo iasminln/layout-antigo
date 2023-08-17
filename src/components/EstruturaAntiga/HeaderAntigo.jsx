@@ -17,6 +17,9 @@ const HeaderAntigo = () => {
             <li className='nav-item'>
               <Link to='/mais-coisas'>Mais</Link>
             </li>
+            <li className='nav-item'>
+              <Link to='/agradecimentos'>Agradecimentos</Link>
+            </li>
           </ul>
 
         </nav>

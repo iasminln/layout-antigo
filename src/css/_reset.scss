@@ -12,6 +12,7 @@ body {
   font-family: $type-first;
   letter-spacing: .3px;
   position: relative;
+  background: $color-five;
 
   &::-webkit-scrollbar {
     width: auto;

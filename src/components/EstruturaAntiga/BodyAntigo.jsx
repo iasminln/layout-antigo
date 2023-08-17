@@ -1,23 +1,23 @@
 import React from 'react';
-
-
+import Imagebody from '../../assets/body-layout-antigo.png'
+import { Route, Routes } from 'react-router-dom';
+import MaisCoisas from './Links/MaisCoisas';
+import Agradecimentos from './Links/Agradecimentos';
+import Home from './Links/Home';
 
 const BodyAntigo = () => {
 
 
   return (
     <section className='container-antigo'>
-      <div className='content-antigo'>
-        <div className='body-antigo'>
-          <div className='conteudo'>
-            <p style={{ fontSize: '20px', fontWeight: '600' }}>Seja bem vindo a essa realidade caótica e nostálgica! </p>
-            <br />
-            <p>Era assim que os antigos incas criavam blogs. Não haviam regras, o design era freestyle e ganhava o blog que piscasse e brilhasse mais! </p>
-            <br />
-            <p>Não se assuste com o cursor em formato de cruz nos links. É assim mesmo. 😂</p>
+      <img className='image-body' src={Imagebody} />
 
-          </div>
-        </div>
+      <div className='body-antigo'>
+        <Routes>
+          <Route path="/*" element={<Home />} />
+          <Route path="/mais-coisas" element={<MaisCoisas />} />
+          <Route path="/agradecimentos" element={<Agradecimentos />} />
+        </Routes>
       </div>
     </section>
   )

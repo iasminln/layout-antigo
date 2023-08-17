@@ -1,7 +1,8 @@
 .container-antigo {
-  display: flex;
   background: $color-five;
-  justify-content: center;
+  max-width: size(780);
+  margin: 0 auto;
+  position: relative;
 
 
   &.header-antigo {
@@ -14,40 +15,108 @@
     top: size(500);
     left: size(280);
 
+    @include mq(780) {
+      left: 36vw;
+      top: 62vw;
+    }
+
     ul {
       display: flex;
 
       .nav-item {
         margin-right: size(10);
 
-        a:hover{
+        a:hover {
           color: $color-one;
           text-decoration: underline;
         }
       }
     }
-
   }
 
 
-  .content-antigo {
-    max-width: size(780);
-    width: 100%;
-    position: relative;
+  .image-body {
+    height: size(250);
+
+    @include mq(780) {
+      height: size(370);
+    }
   }
+
 
   .body-antigo {
     width: 100%;
-    background: url('../assets//body-layout-antigo.png') repeat-y $color-five;
+    position: absolute;
+    top: size(-270);
+    max-width: size(375);
+    left: size(285);
+    z-index: 3;
+    font-size: size(16);
+    line-height: size(24);
+    padding-bottom: size(30);
+    max-height: size(530);
+    
 
-    .conteudo {
-      position: relative;
-      left: size(285);
-      margin-top: -270px;
-      max-width: size(375);
-      z-index: 3;
-      font-size: size(16);
-      line-height: size(24);
+    @include mq(780) {
+      left: 37vw;
+      top: -34vw;
+      max-width: 46vw;
+      overflow-y: scroll;
+    }
+
+    &::-webkit-scrollbar {
+      width: 10px;
+  
+      &-thumb {
+        background-color: $color-six;
+        box-shadow: inset 0 0 3px #000;
+      }
+  
+      &-track {
+        background-color: $color-six;
+      }
+  
+      &-button {
+        background-color: $color-six;
+        box-shadow: inset 0 0 3px #000;
+      }
+    }
+
+
+    .div-image {
+      @include flex-center();
+      margin: size(30) 0;
+
+      img {
+        border-radius: 6px;
+      }
+    }
+
+    li.normal-text {
+      list-style: circle;
+      margin-left: size(20);
+    }
+
+    .title-text {
+      font-size: size(20);
+      line-height: size(28);
+      font-weight: 600;
+      margin: size(10) 0;
+    }
+
+    .normal-text {
+      font-size: size(17);
+      line-height: size(22);
+      margin: size(10) 0;
+
+      a {
+        color: $color-eight;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
