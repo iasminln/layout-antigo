@@ -12,9 +12,11 @@ const App = () => {
     <>
       <HashRouter>
         <PlayerMusica />
-        <HeaderAntigo />
-        <BodyAntigo />
-        <FooterAntigo />
+        <div className='blog-inteiro'>
+          <HeaderAntigo />
+          <BodyAntigo />
+          <FooterAntigo />
+        </div>
       </HashRouter>
     </>
   );

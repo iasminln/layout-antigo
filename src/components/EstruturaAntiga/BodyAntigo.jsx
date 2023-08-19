@@ -9,7 +9,7 @@ const BodyAntigo = () => {
 
 
   return (
-    <section className='container-antigo'>
+    <section className='container-antigo body-antigo'>
       <img className='image-body' src={Imagebody} />
 
       <div className='body-antigo'>

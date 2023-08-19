@@ -2,6 +2,11 @@
   @return calc($size/ 16)+rem;
 }
 
+@mixin fontSize($fontSize, $lineSize: 10) {
+  font-size: size($fontSize);
+  line-height: size($fontSize + $lineSize);
+}
+
 @mixin mq($width, $type: max) {
   @media (#{$type}-width: ($width + px)) {
     @content;
