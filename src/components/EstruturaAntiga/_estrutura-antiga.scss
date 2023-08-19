@@ -1,7 +1,7 @@
 .blog-inteiro {
   @include mq(780) {
     display: grid;
-    grid-template-rows: 67vw 64vw 1fr;
+    grid-template-rows: 67vw 64vh 1fr;
   }
 }
 
